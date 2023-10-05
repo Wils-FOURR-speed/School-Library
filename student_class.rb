@@ -9,4 +9,10 @@ class Student < Person
   def play_hooky
     '¯\\(ツ)/¯'
   end
+
+  def classroom=(classroom)
+    @classroom&.students&.delete(self)
+    @classroom = classroom
+    classroom.students << self unless classroom.nil?
+  end
 end
