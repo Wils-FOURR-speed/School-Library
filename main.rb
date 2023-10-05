@@ -28,10 +28,6 @@ class Main
     action = choice_actions[choice]
     action&.call || puts('Invalid choice. Please try again.')
   end
-
-
-  #   app = App.new
-  #   app.start
 end
 
 Main.new

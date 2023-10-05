@@ -1,8 +1,6 @@
 require_relative 'book'
 require_relative 'person'
 require_relative 'rental'
-# require_relative 'student'
-# require_relative 'teacher'
 
 # Method to list all books
 def list_all_books(books)
