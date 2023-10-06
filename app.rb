@@ -41,7 +41,7 @@ class App
       puts 'No people added yet. Please add a person and try again.'
     else
       @people.each_with_index do |person, index|
-        puts "#{index + 1}) [#{person.class}] Name: #{person.name} | Age: #{person.age} | ID: #{person.id}"
+        puts "#{index + 1}) [#{person.class}] Name: #{person.age} | Age: #{person.name} | ID: #{person.id}"
       end
     end
   end
